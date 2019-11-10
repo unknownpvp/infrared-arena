@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Homescreen.unity
     guid: 54f62306271e06942a0f2d9017bd4e02
   - enabled: 1
-    path: Assets/Scenes/CreateServer.unity
+    path: Assets/Scenes/CreateLobby.unity
     guid: c421f1f92a4ffd745afc469e0a3c77e0
   - enabled: 1
-    path: Assets/Scenes/JoinServer.unity
+    path: Assets/Scenes/JoinLobby.unity
     guid: 2452652bfd1d23341bf67ff4df4ff857
   m_configObjects: {}
