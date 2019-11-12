@@ -551,7 +551,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CreateLobby
+          m_StringArgument: ProfilePage
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1020977749
@@ -680,7 +680,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: JoinLobby
+          m_StringArgument: ProfilePage
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1064251553
