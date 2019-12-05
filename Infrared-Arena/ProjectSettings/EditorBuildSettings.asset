@@ -20,4 +20,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProfilePage.unity
     guid: fee1a1f618c3d404b9cf86564c1b6547
+  - enabled: 1
+    path: Assets/Scenes/GameSettings.unity
+    guid: c450472271bcec84ba3dd8988114d42a
+  - enabled: 1
+    path: Assets/Scenes/GamePlay.unity
+    guid: cfb912b47c8237144819d1e0fe88ecd7
+  - enabled: 1
+    path: Assets/Scenes/Scoreboard.unity
+    guid: 90ed55a907bdf8244ac4b607aceb3193
+  - enabled: 1
+    path: Assets/Scenes/LobbyWaitingRoom.unity
+    guid: 86ee3f828f29ba6498d5a2801fb6c191
+  - enabled: 1
+    path: Assets/Scenes/MatchSettings.unity
+    guid: 353d4c55560f8944b8fe0b9cc7018e0e
   m_configObjects: {}
