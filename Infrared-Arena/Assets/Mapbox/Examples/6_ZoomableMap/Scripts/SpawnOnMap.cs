@@ -25,8 +25,11 @@
 
 		List<GameObject> _spawnedObjects;
 
+		public Camera _camera;
+
 		void Start()
 		{
+			_camera = Camera.main;
 			_locations = new Vector2d[_locationStrings.Length];
 			_spawnedObjects = new List<GameObject>();
 			for (int i = 0; i < _locationStrings.Length; i++)
