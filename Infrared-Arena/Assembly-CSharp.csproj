@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{8066A134-A63B-625C-FFEF-D258388D4FD4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -66,16 +67,16 @@
     <Compile Include="Assets\CreateLobby.cs" />
     <Compile Include="Assets\DropDownMenu.cs" />
     <Compile Include="Assets\FirebaseInit.cs" />
+    <Compile Include="Assets\GamePlay.cs" />
     <Compile Include="Assets\getName.cs" />
     <Compile Include="Assets\HelpMenu.cs" />
     <Compile Include="Assets\HomescreenManager.cs" />
     <Compile Include="Assets\InputField.cs" />
+    <Compile Include="Assets\JoinLobby.cs" />
+    <Compile Include="Assets\LobbyWaiting.cs" />
     <Compile Include="Assets\MainMenu.cs" />
-    <Compile Include="Assets\NameTransfer.cs" />
     <Compile Include="Assets\NextScene.cs" />
-    <Compile Include="Assets\PlayerData.cs" />
     <Compile Include="Assets\PlayerInfo.cs" />
-    <Compile Include="Assets\SaveSystem.cs" />
     <Compile Include="Assets\Settings.cs" />
     <None Include="Assets\Fonts\8-bit-operator\SIL Open Font License.txt" />
     <None Include="Assets\Fonts\Pixel Font - Tripfive\_README.txt" />

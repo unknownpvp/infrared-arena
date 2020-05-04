@@ -1,28 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerInfo : MonoBehaviour
 {
-    public int health = 500;
-    public string username = "Linda";
-    // Start is called before the first frame update
-
-    public void SavePlayer()
+    public UnityEngine.UI.InputField nameField;
+    public int health;
+    public static string playerName;
+    public string scene;
+    void saveName()
     {
-        SaveSystem.SavePlayer(this);
+        nameField = gameObject.GetComponent<UnityEngine.UI.InputField>();
     }
 
-    public void LoadPlayer()
+    public void OnMouseDown()
     {
-        PlayerData data = SaveSystem.LoadPlayer();
-        health = data.health;
-        username = data.username;
+        playerName = nameField.text;
+        PlayerPrefs.SetString("playername", playerName);
+        SceneManager.LoadScene(scene);
     }
-    #region
-    public void ChangeHealth(int amount)
-    {
-        health += amount;
-    }
-    #endregion
 }
