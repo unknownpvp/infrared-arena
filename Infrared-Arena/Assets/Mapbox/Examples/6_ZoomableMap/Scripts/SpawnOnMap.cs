@@ -6,9 +6,13 @@
 	using Mapbox.Unity.MeshGeneration.Factories;
 	using Mapbox.Unity.Utilities;
 	using System.Collections.Generic;
+	using Mapbox.Unity.Location;
 
 	public class SpawnOnMap : MonoBehaviour
 	{
+		[SerializeField]
+		ILocationProvider _LocationProvider;
+
 		[SerializeField]
 		AbstractMap _map;
 
@@ -24,6 +28,8 @@
 		GameObject _markerPrefab;
 
 		List<GameObject> _spawnedObjects;
+
+		[SerializeField] GameObject _user;
 
 		public Camera _camera;
 
@@ -41,6 +47,8 @@
 				instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 				_spawnedObjects.Add(instance);
 			}
+			//_user.transform.localPosition = _map.GeoToWorldPosition(new Vector2d(37, -120.01), true);
+			_user.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 		}
 
 		private void Update()
@@ -53,6 +61,8 @@
 				spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
 				spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 			}
+			//_user.transform.localPosition = _map.GeoToWorldPosition(new Vector2d(37, -120.01), true);
+			_user.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 		}
 	}
 }

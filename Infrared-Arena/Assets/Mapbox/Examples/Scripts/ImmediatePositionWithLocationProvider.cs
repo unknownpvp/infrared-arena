@@ -32,11 +32,14 @@
 
 		void LateUpdate()
 		{
-			if (_isInitialized)
-			{
+			//if (_isInitialized)
+			//{
 				var map = LocationProviderFactory.Instance.mapManager;
-				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
-			}
+			
+				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude, true);
+				map.UpdateMap(LocationProvider.CurrentLocation.LatitudeLongitude, map.Zoom);
+				//transform.localPosition = new Vector3(100f, 100f, 100f);
+			//}
 		}
 	}
 }
