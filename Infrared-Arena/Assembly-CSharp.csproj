@@ -596,6 +596,7 @@
      <None Include="Assets\Mapbox\Unity\Location\ExampleGpsTraces\Helsinki.txt" />
      <None Include="Assets\Mapbox\Examples\2_AstronautGame\AstronautGame\Building\CharacterBuildingShader.shader" />
      <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
+     <None Include="Assets\LocationLog.txt" />
      <None Include="Assets\Mapbox\Shaders\RasterWithTransparencyShader.shader" />
      <None Include="Assets\Mapbox\Shaders\MapboxStylesPerRenderer.shader" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
